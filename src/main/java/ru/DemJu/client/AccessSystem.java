@@ -1,12 +1,11 @@
 package ru.DemJu.client;
 
-import ru.DemJu.entity.InfoRooms;
-import ru.DemJu.entity.InfoUser;
+import ru.ReturnClass;
 
 public interface AccessSystem {
-    InfoRooms getInfoRooms();
+    ReturnClass statusGetInfoRooms();
 
-    String getPeopleCheck(String entrance, Integer keyId, Integer roomId);
+    ReturnClass statusGetPeopleCheck(String entrance, Integer keyId, Integer roomId);
 
-    InfoUser getUser(Integer end, Integer start);
+    ReturnClass statusGetUser(Integer end, Integer start);
 }
